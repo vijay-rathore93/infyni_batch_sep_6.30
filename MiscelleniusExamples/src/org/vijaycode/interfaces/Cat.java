@@ -14,4 +14,9 @@ public class Cat implements Animal,Animal1{
     public void printLegsCont() {
         System.out.println("Cat has four legs....");
     }
+
+    @Override
+    public void show() {
+
+    }
 }
