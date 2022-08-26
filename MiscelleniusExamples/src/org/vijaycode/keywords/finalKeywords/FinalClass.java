@@ -1,4 +1,4 @@
-package org.vijaycode.keywords;
+package org.vijaycode.keywords.finalKeywords;
 
 public final class FinalClass {
 

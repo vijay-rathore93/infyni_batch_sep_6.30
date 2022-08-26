@@ -1,4 +1,4 @@
-package org.vijaycode.keywords;
+package org.vijaycode.keywords.finalKeywords;
 
 /*public class Student extends FinalClass{*/ // can not be inherited
 
