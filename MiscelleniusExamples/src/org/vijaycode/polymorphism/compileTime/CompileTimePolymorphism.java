@@ -14,4 +14,8 @@ public class CompileTimePolymorphism {
     public void m1(Float a, Integer b){
         System.out.println(" M1() printing with two argument.....");
     }
+
+
+
+
 }
