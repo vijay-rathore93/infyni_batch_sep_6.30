@@ -1,0 +1,158 @@
+
+
+Method overloading: same name with differnet no of argument or type of agruments.
+
+
+
+1. method resolution in overloading always done by compiler.
+
+Automatic promotion in overloading-----
+
+
+Byte--->short--->int--->long---> float---> double
+
+char--->int--->long---> float---> double
+
+
+https://www.youtube.com/watch?v=_tXtDxF3Utc&t=288s
+
+class Test{
+
+
+public void m1(int a){
+sout("int parameter");
+}
+
+public void m1(float a){
+sout("float parameter");
+}
+
+}
+
+
+Test test=new Test();
+test.m1(12);//int parameter
+test.m1(12.5f);//float parameter
+test.m1('a');//int parameter
+test.m1(10l);//float parameter
+test.m1(10.78);//Compilation error
+
+case-2
+
+class Test{
+
+public void m1(Object a){
+sout("Object parameter");
+}
+
+public void m1(String  a){
+sout("String parameter");
+}
+}
+
+Test test=new Test();
+test.m1(new Object());//object version
+test.m1("Vijay");//String version
+test.m1(null);//String version
+
+case-3
+-------------
+
+class Test{
+
+public void m1(String a){
+sout("Object parameter");
+}
+
+public void m1(StringBuffer  a){
+sout("String parameter");
+}
+}
+
+Test test=new Test();
+test.m1("Vijay");//String version
+test.m1(new StringBuffer("test"));//StringBuffer version
+test.m1(null);//compilation error
+
+
+
+case-3
+-------------
+
+class Test{
+
+public void m1(int a){
+sout("int parameter");
+}
+
+public void m1(int.......  a){
+sout("Var arg parameter");
+}
+}
+
+Test test=new Test();
+test.m1();//Var arg parameter
+test.m1(10,20,30));//Var arg parameter
+test.m1(10);//int parameter
+
+case-5:
+--------------
+class Test{
+
+public void m1(int i,float f){
+sout("int-float version");
+}
+
+
+public void m1(float i,int f){
+sout("float-int version");
+}
+
+
+}
+
+Test test=new Test();
+test.m1(10,50.5f);//int-float verion
+test.m1(50.5f,10);//float-int version
+test.m1(10,10);//compilation  error , it is ambiguous error
+test.m1(10.5f,10.5f);//compilation  error , it is ambiguous error
+
+
+case-6:
+--------
+class animal{}
+
+class Monkey{}
+
+
+class Test{
+
+public void m1(Animal animal){
+
+}
+
+public void m1(Monkey monkey){
+
+}
+
+}
+
+
+Test test=new Test();
+
+Animal animal=new Animal();
+test.m1(animal); //animal version
+
+Monkey monkey=new Monkey();
+test.m1(monkey);  //monkey version
+
+Animal animal1=new Monkey();
+
+test.m1(animal1);  //animal version
+
+
+
+
+
+
+
