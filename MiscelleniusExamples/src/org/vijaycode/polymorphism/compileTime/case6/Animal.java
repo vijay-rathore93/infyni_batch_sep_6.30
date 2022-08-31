@@ -14,10 +14,10 @@ class TestAnimal {
     public static void main(String[] args) {
         Test test=new Test();
         Animal animal=new Animal();
-        test.m1(animal); //animal version
+        test.m1(animal);// Animal version
         Monkey monkey=new Monkey();
-        test.m1(monkey);  //monkey version
+        test.m1(monkey); //Monkey version
         Animal animal1=new Monkey();
-        test.m1(animal1);  //animal version
+        test.m1(animal1);  //Animal version
     }
 }
