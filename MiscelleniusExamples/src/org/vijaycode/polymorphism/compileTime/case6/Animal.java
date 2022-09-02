@@ -5,6 +5,7 @@ class Monkey extends Animal{}
 class Test {
     public void m1(Animal animal) {
         System.out.println("Animal version");
+
     }
     public void m1(Monkey monkey) {
         System.out.println("Monkey version");
