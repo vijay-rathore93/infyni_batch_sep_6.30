@@ -1,9 +1,11 @@
 package inheritanceWithExceptionHandlingOverridding.problem2;
 
 
+import java.io.IOException;
+
 /*class Parent {
 
-    public void method() throws IoException{
+    public void method() throws IOException {
         System.out.println("Parent class");
     }
 }
