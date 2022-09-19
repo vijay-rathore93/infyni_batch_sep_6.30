@@ -3,6 +3,7 @@ package org.vijaycode.polymorphism.Runtime.example;
 public class B extends ParentClassA {
 
     public void m1(ParentClassA a){
+
         System.out.println("++++++ class B+++++++++++++++++++++++");
     }
 

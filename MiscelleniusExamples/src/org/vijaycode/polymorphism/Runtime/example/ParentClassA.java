@@ -6,7 +6,8 @@ public class ParentClassA {
 
     public void m1(ParentClassA a){
        // System.out.println(a.VARIBLE);
-        System.out.println("++++++ class A+++++++++++++++++++++++");
+        System.out.println("+" +
+                "+++++ class A+++++++++++++++++++++++");
     }
 
     public void m2(Integer a,Integer b,Integer c){
