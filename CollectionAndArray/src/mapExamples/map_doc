@@ -1,0 +1,8 @@
+1.HashMap has the implementation of Map Interface.  HashMap has key and value pairs.
+2.The initial capacity of HashMap is 16 and where as load factor is 0.75.
+3.The initial capacity is the number of buckets in the hashtable and the load factor is a measure of how full the hash table is allowed to get before its capacity is automatically increased.
+4.equals() will help us to identify if the object is unique
+5.HashCode helps us to identify the bucket in which the values has to be Stored.
+6.A collision, or more specifically, a hash code collision in a HashMap, is a situation where two or more key objects produce the same final hash value and hence point to the same bucket location or array index.
+7. if hashCode() is not implemented, we won’t be able to retrieve the value because HashMap use hash code to find the bucket to look for the entry. If we only use hashCode() and don’t implement equals() then also value will be not retrieved because equals() method will return false.
+8.
