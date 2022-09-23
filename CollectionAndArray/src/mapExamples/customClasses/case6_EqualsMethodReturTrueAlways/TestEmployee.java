@@ -1,4 +1,4 @@
-package mapExamples.customClasses.case4_EqualsMethodReturTrueAlways;
+package mapExamples.customClasses.case6_EqualsMethodReturTrueAlways;
 
 import java.util.HashMap;
 import java.util.Map;

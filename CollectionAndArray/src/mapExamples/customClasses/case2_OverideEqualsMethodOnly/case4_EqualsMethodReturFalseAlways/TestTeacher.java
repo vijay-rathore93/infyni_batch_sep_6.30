@@ -1,8 +1,7 @@
-package mapExamples.customClasses.case4_EqualsMethodReturFalseAlways;
+package mapExamples.customClasses.case2_OverideEqualsMethodOnly.case4_EqualsMethodReturFalseAlways;
 
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class TestTeacher {
 

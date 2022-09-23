@@ -1,14 +1,13 @@
-package mapExamples.customClasses.case4_EqualsMethodReturTrueAlways;
-
+package mapExamples.customClasses.case2_OverideEqualsMethodOnly.case4_EqualsMethodReturFalseAlways;
 
 import java.util.Objects;
 
-public class Employee {
+public class Teacher {
 
     private String name;
     private Integer id;
 
-    public Employee(String name, Integer id) {
+    public Teacher(String name, Integer id) {
         this.name = name;
         this.id = id;
     }
@@ -31,7 +30,7 @@ public class Employee {
 
     @Override
     public boolean equals(Object o) {
-       return true;
+        return false;
     }
 
     @Override
@@ -41,7 +40,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Teacher{" +
                 "name='" + name + '\'' +
                 ", id=" + id +
                 '}';
