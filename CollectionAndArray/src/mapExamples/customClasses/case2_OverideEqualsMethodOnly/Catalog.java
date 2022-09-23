@@ -1,4 +1,6 @@
-package mapExamples.customClasses.case2_changeValueInCustomObject;
+package mapExamples.customClasses.case2_OverideEqualsMethodOnly;
+
+import java.util.Objects;
 
 public class Catalog {
 
@@ -25,6 +27,15 @@ public class Catalog {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Catalog catalog = (Catalog) o;
+        return Objects.equals(id, catalog.id) && Objects.equals(name, catalog.name);
+    }
+
 
     @Override
     public String toString() {

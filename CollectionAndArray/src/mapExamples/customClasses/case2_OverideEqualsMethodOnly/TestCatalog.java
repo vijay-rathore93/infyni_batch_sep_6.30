@@ -1,6 +1,4 @@
-package mapExamples.customClasses.case2_changeValueInCustomObject;
-
-import mapExamples.customClasses.case1_withoutHashCodeAndEquals.Product;
+package mapExamples.customClasses.case2_OverideEqualsMethodOnly;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,10 +16,17 @@ public class TestCatalog {
         map.put(catalog2, "D");//what will be size
         map.put(catalog3, "C");//what will be size
 
-        catalog2.setName("ABC");
+        System.out.println("Size of map::"+map.size());
 
-        System.out.println(map);
+        System.out.println("content::"+map);
 
 
     }
 }
+
+//in this case,equal mehod check equallity on the basis of properties defined inside class  but hashcode is not overridden coz of that
+// line no
+ //map.put(catalog2, "B");//what will be size
+    //     map.put(catalog2, "D");//what will be size
+
+//will have same address and same hashcode.
