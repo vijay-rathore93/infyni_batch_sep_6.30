@@ -10,11 +10,11 @@ public class Case2UnCheckedException {
 }
 
 class Test2 {
-    void m() throws IOException {
+    void m() throws Exception {
         throw new java.io.IOException("device error");//checked exception
     }
 
-    void n() throws IOException {
+    void n() throws Exception {
         m();
     }
 
@@ -22,7 +22,7 @@ class Test2 {
         try {
             n();
         } catch (Exception e) {
-            System.out.println("exception handeled");
+            System.out.println("exception handle::"+e.getMessage());
         }
     }
 }

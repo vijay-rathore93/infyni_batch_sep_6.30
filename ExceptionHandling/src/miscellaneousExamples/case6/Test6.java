@@ -3,7 +3,6 @@ package miscellaneousExamples.case6;
 public class Test6 {
 
     public static void main(String[] args) {
-
       int result=m1();
       System.out.println("result:" + result);
     }
@@ -25,6 +24,7 @@ public class Test6 {
         } catch (ArithmeticException arithmeticException) {
             System.out.println("=====arithmeticException=====");
             System.out.println("Error happened.." + arithmeticException.getMessage());
+            //System.exit(1);
             return 4;
         }
         finally{

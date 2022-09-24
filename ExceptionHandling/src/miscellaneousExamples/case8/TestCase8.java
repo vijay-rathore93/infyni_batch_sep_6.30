@@ -14,7 +14,7 @@ public class TestCase8 {
         }
     }
     //IOException is parent of FileNotFoundException
-    public static void m1() throws IOException {
+    public static void m1() throws IOException {//FileNotFoundException
         m2();
     }
 

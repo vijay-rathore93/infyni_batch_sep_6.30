@@ -1,6 +1,7 @@
 package inheritanceWithExceptionHandlingOverridding.problem2;
 
 
+
 /*class Parent {
 
     public void method() throws RuntimeException{

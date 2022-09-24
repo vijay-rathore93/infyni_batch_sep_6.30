@@ -18,6 +18,7 @@ public class Test4 {
         catch(ArithmeticException arithmeticException){//execute
             System.out.println("=====arithmeticException=====");
             System.out.println("Error happened.."+arithmeticException.getMessage());
+            //throw new ArrayIndexOutOfBoundsException("hghgvhg");
         }
         catch(RuntimeException runtimeException){
             System.out.println("=====runtimeException=====");
