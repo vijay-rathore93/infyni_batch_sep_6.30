@@ -27,7 +27,9 @@ public class ArrayExample1 {
             }
         }
 
-    }
+    } 
+
+    
 
 
     private static Integer findIndexData(Integer[] array, Integer index) {
